@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Chau Philomene One', sans-serif;
+    font-size: 1rem;
+    min-height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+
+/*navbar*/
+.navbar ul {
+    display: inline-flex;
+    list-style-type: none;
+    padding: 8px 8px;
+}
+.navbar ul li{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-left: 15px;
+    text-align: center;
+}
+.navbar ul li  a {
+    color: black;
+    font-size: 19px;
+    padding: 2px;
+    transition: all 0.5s ease 0s;
+    text-decoration: none;
+}
+.navbar ul li a:hover{
+    font-size: 24px;
+    color: red;
+    transition: .5s;
+}
+/*navbar*/
+
+/* GRID LAYOUT */
+.grid-container > * {
+    box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/*header*/
+.header {
+    margin: 0;
+    padding: 0;
+    grid-area: header;
+    background-color: coral;
+}
+.header img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*header*/
+
+.navbar {
+    grid-area: navbar;
+    background-color: beige;
+}
+
+.container {
+    grid-area: container;
+    background-color: beige;
+    text-align: center;
+}
+.container h1 {
+    font-size: 3rem;
+    padding: 0.4rem 0.4rem;
+}
+
+.nested-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+.nested-container div {
+    margin-top:    1rem;
+    margin-bottom: 1rem;
+    border: 3px solid black;
+}
+.nested-container div h2{
+    margin: 1.2rem 1.2rem;
+}
+.nested-container div a{
+    text-decoration: none;
+}
+.nested-container div img{
+    height: 60%;
+    width: 60%;
+}
+.nested-container div p{
+    margin: 1rem 1rem;
+}
+
+
+/*sidebar*/
+.sidebar {
+    grid-area: sidebar;
+    background-color: beige;
+    text-align: center;
+}
+.sidebar h1 {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    margin-bottom: 0.4rem;
+    border: 1px solid black;
+}
+.sidebar p{
+    padding-top: 0.2rem;
+    line-height: 1.2rem;
+    font-size: 0.92rem;
+}
+/*sidebar*/
+
+/*footer*/
+.footer {
+    grid-area: footer;
+    background-color: beige;
+    text-align: center;
+    font-size: 8px;
+}
+.footer .socials i{
+    margin: 2px 5px;
+    padding: 5px;
+    border: 1px black solid;
+    border-radius: 50%;
+    color: black;
+    font-size: 10px;
+}
+.footer .socials i:hover {
+    background-color: gold;
+    transition: .5s;
+    font-size: medium;
+}
+/*footer*/
+
+
+/*signs*/
+.nested {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    text-align: center;
+}
+.nested div {
+    border: 4px solid black;
+    border-radius: 15%;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.nested .sign-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 13%;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+.nested a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+}
+/*signs*/
+
+/*tarot*/
+/*tarot .card-of-the-day*/
+.nested-tarot{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+}
+.nested-tarot .card-of-the-day h1{
+    margin-top: 15px;
+    padding: 5px 5px;
+    border: 1px solid black;
+}
+.nested-tarot .card-of-the-day img {
+    float: left;
+    margin: 1.2rem 2rem;
+    width: 30%;
+    height: 30%;
+}
+.nested-tarot .card-of-the-day p{
+    margin: 1.2rem 2rem;
+    line-height: 20px;
+}
+/*tarot .card-of-the-day*/
+
+/*tarot -todays-lecture*/
+.nested-tarot .nested-todays-lecture {
+    display: grid;
+    align-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.nested-tarot .nested-todays-lecture div {
+    display: flexbox;
+    margin: 3px 3px;
+    border: 3px solid black;
+}
+.nested-tarot .todays-lecture h1 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 5px 5px;
+    border: 1px solid black;
+}
+.nested-tarot .nested-todays-lecture h2{
+    margin: .2rem .2rem;
+    padding: .2rem .2rem;
+}
+.nested-tarot .nested-todays-lecture img {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 60%;
+    height: 34%;
+}
+.nested-tarot .nested-todays-lecture p {
+    margin-left:  4px;
+    margin-right: 4px;
+    line-height: 20px;
+}
+/*tarot -todays-lecture*/
+/*tarot*/
+
+/*mobile layout*/
+.grid-container {
+    display: grid;
+    gap: 5px;
+    background-color: black;
+    grid-template:
+    "header    " 100px
+    "navbar    " 100px
+    "sidebar   " auto
+    "container " auto
+    "footer    " 80px
+    ;
+}
+
+/*tablet layout*/
+@media (min-width: 600px) {
+    .grid-container {
+        grid-template: 
+        "header    header"    100px
+        "navbar    navbar"    85px
+        "container sidebar"   auto
+        "footer    footer"    100px /
+        auto       200px   
+        ;
+    }
+
+    /*sidebar*/
+    .sidebar h1 {
+        padding-top: .9rem;
+        padding-bottom: .9rem;
+        margin-bottom: 1.4rem;
+        border: 1px solid black;
+    }
+    .sidebar p{
+        text-align: start;
+        padding-top: .7rem;
+        line-height: 23px;
+        font-size: 1.2rem;
+    }
+    /*sidebar*/
+
+    /*nested signs*/
+    .nested {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+        text-align: center;
+    }
+    /*nested signs*/
+
+    /*navbar*/
+    .navbar ul {
+        display: inline-flex;
+        list-style-type: none;
+    }
+    .navbar ul li{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        margin-left: 15px;
+        text-align: center;
+    }    
+    .navbar ul li a {
+        font-size: 1.2rem;
+        transition: all 0.5s ease 0s;
+    }
+    /*navbar*/
+
+    /*footer*/
+    .footer {
+        text-align: center;
+        font-size: 0.7rem;
+        padding-top: 5px;
+    }
+    .footer .socials i{
+        font-size: large;
+    }
+    .footer .socials i:hover{
+        font-size: x-large;
+    }
+    /*footer*/
+
+    /*tarot*/
+    .nested-tarot .card-of-the-day p{
+        margin: 1.2rem 2rem;
+        line-height: 1.4rem;
+        font-size: 1.3rem;
+    }
+    .nested-tarot .nested-todays-lecture img {
+        display: flexbox;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        width: 50%;
+        height: 50%;
+    }
+    .nested-tarot .nested-todays-lecture p {
+        font-size: 1.3rem;
+        line-height: 20px;
+    }
+    .nested-tarot .nested-todays-lecture div {
+        display: inline-table;
+        margin: 3px 3px;
+        border: 3px solid black;
+    }
+    /*tarot*/
+
+}
+
+/*desktop layout*/
+@media (min-width: 900px) {
+    .grid-container {
+        grid-template: 
+        "header  header    header" 125px
+        "navbar container sidebar" auto
+        "footer  footer    footer" 100px /
+         140px   auto      200px
+        ;
+    }
+
+    /*nested signs*/
+    .nested {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 15px;
+        text-align: center;
+    }
+    /*nested signs*/
+
+    /*navbar*/
+    .navbar ul {
+        display: block;
+        list-style-type: none;
+    }
+    .navbar ul li{
+        padding-top: 15px auto;
+        margin: 35px auto;
+        
+        text-align: center;
+    }
+    .navbar ul li a {
+        color: black;
+        font-size: 20px;
+        transition: all 0.5s ease 0s;
+    }
+    /*navbar*/
+
+    /*tarot*/
+    .nested-tarot .card-of-the-day p{
+        text-align: center;
+        margin: 1.2rem 2rem;
+        line-height: 25px;
+    }
+    .nested-tarot .card-of-the-day img {
+        height: 20%;
+        width: 20%;
+    }
+    /*tarot*/
+}
+/* END GRID LAYOUT */
