@@ -1,2 +1,2 @@
-# horoscope-wp-cac
-Website for the full stack developer course "codo a codo" organized by the government of the city of buenos aires.
+# alexeipopov95.github.io
+Webservice for https://github.com/alexeipopov95/horoscope-wp-cac.git

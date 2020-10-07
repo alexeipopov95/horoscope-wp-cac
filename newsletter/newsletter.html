@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="../media/base/icons8-small-telescope-64.png">
     <link rel="stylesheet" href="../static/css/styles.css">
-    <title> El Horoscopo  | Signos </title>
+    <title> El Horoscopo  | Comunicate </title>
 </head>
 <body class="grid-container">
     <header class="header">
@@ -26,57 +26,43 @@
     </nav>
 
     <div class="container">
-        <h1>- LOS SIGNOS -</h1>
-        <div class="nested">
+        <h1>- Formulario de contacto -</h1>
+
+        <form action="https://formspree.io/xqkgazzv" method="POST" method="post">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, reprehenderit. Quasi possimus debitis ipsam inventore quos iusto, incidunt ab, cumque ut ducimus labore culpa tempore. Unde sequi officiis amet voluptatem!</p><br>
             <div>
-                <a href="#"><img src="../media/signs/aries.jpeg" alt="" class="sign-pic"></a>                
-                <a href="#">- Aries -</a>
+                <label for="firstName">Nombre:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="Ingrese aqui su nombre" required>
             </div>
             <div>
-                <a href="#"><img src="../media/signs/taurus.jpeg" alt="" class="sign-pic"></a>                
-                <a href="#">- Tauro -</a>
+                <label for="lastName">Apellido:</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Ingrese aqui su apellido" required>
             </div>
             <div>
-                <a href="#"><img src="../media/signs/geminis.jpeg" alt="" class="sign-pic"></a>                
-                <a href="#">- Geminis -</a>
+                <label for="email">E-Mail:</label>
+                <input type="email" name="email" id="email" placeholder="alguien@gmail.com" required>
             </div>
             <div>
-                <a href="#"><img src="../media/signs/cancer.jpeg" alt="" class="sign-pic"></a>                
-                <a href="#">- Cancer -</a>
+                <label for="sign">Seleccione su signo</label>
+                <select id="sign" name="sign">
+                    <option value="aries">Aries</option>
+                    <option value="taurus">Tauro</option>
+                    <option value="gemini">Geminis</option>
+                    <option value="cancer">Cancer</option>
+                    <option value="leo">Leo</option>
+                    <option value="virgo">Virgo</option>
+                    <option value="libra">Libra</option>
+                    <option value="scorpio">Scorpio</option>
+                    <option value="sagittarius">Sagitario</option>
+                    <option value="capricorn">Capricornio</option>
+                    <option value="aquarius">Aquario</option>
+                    <option value="pisces">Piscis</option>
+                </select>
             </div>
-            <div>
-                <a href="#"><img src="../media/signs/leo.jpeg" alt="" class="sign-pic"></a>                
-                <a href="#">- Leo -</a>
-            </div>
-            <div>
-                <a href="#"><img src="../media/signs/virgo.jpeg" alt="" class="sign-pic"></a>                
-                <a href="#">- Virgo -</a>
-            </div>
-            <div>
-                <a href="#"><img src="../media/signs/libra.jpeg" alt="" class="sign-pic"></a>                
-                <a href="#">- Libra -</a>
-            </div>
-            <div>
-                <a href="#"><img src="../media/signs/escorpio.jpeg" alt="" class="sign-pic"></a>                
-                <a href="#">- Escorpio -</a>
-            </div>
-            <div>
-                <a href="#"><img src="../media/signs/sagitario.jpeg" alt="" class="sign-pic"></a>                
-                <a href="#">- Sagitario -</a>
-            </div>
-            <div>
-                <a href="#"><img src="../media/signs/capricornio1.jpeg" alt="" class="sign-pic"></a>                
-                <a href="#">- Capricornio -</a>
-            </div>
-            <div>
-                <a href="#"><img src="../media/signs/acuario.jpeg" alt="" class="sign-pic"></a>                
-                <a href="#">- Acuario -</a>
-            </div>
-            <div>
-                <a href="#"><img src="../media/signs/piscis.jpeg" alt="" class="sign-pic"></a>                
-                <a href="#">- Piscis -</a>
-            </div>
-        </div>
+            <input type="submit" value="Consultar a la divinidad">
+
+        </form>
+
     </div>
 
     <aside class="sidebar">

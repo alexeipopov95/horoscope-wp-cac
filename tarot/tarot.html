@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="../media/favicon.gif">
+    <link rel="icon" type="image/png" href="../media/base/icons8-small-telescope-64.png">
     <link rel="stylesheet" href="../static/css/styles.css">
     <title> El Horoscopo  | Tarot </title>
 </head>
@@ -13,28 +13,31 @@
     </header>
 
     <nav class="navbar">
-        <ul>
-            <li><a href="../home/index.html">Inicio</a></li>
-            <li><a href="../signs/signs.html">Signos</a></li>
-            <li><a href="../signs/daily_horoscope.html">Horoscopo diario</a></li>
-            <li><a href="../signs/weekly_horoscope.html">Horoscopo semanal</a></li>
-            <li><a href="../tarot/tarot.html">Tarot</a></li>
-        </ul>
+        <div class="nested-navbar">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../signs/signs.html">Signos</a></li>
+                <li><a href="../signs/daily_horoscope.html">Horoscopo diario</a></li>
+                <li><a href="../signs/weekly_horoscope.html">Horoscopo semanal</a></li>
+                <li><a href="../tarot/tarot.html">Tarot</a></li>
+                <li><a href="../newsletter/newsletter.html">Consulta a los astros</a></li>
+            </ul>
+        </div>
     </nav>
 
     <div class="container">
         <div class="nested-tarot">
-            <div class="card-of-the-day">
-                <h1>-- carta del dia --</h1>
+            <article class="card-of-the-day">
+                <h1>- CARTA DEL DIA -</h1>
                 <a href=""><img src="../media/tarot/the_justice.jpg" alt=""></a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                    Necessitatibus, laborum illo. Maxime possimus eum sapiente.
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Aperiam optio earum, laboriosam dolor ipsam nostrum.
                 Aperiam optio earum, laboriosam dolor ipsam nostrum.</p>
-            </div>
-            <div class="todays-lecture">
-                <h1>-- lecturas para hoy --</h1>
+            </article>
+            <article class="todays-lecture">
+                <h1>- LECTURAS PARA HOY -</h1>
                 <div class="nested-todays-lecture">
                     <div>
                         <h2>Rey de varas</h2>
@@ -52,7 +55,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias rem natus quas numquam eveniet incidunt.</p>
                     </div>
                 </div>
-            </div>
+            </article>
 
         </div>
     </div>
