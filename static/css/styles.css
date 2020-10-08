@@ -196,8 +196,7 @@ html {
     border-bottom-right-radius: 0%;
 }
 .nested .sign-pic:hover {
-    filter: invert(100%);
-    
+    filter: invert(100%);   
 }
 .nested a {
     text-align: center;
